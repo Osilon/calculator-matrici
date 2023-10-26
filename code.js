@@ -15,6 +15,6 @@ det.addEventListener("click", function (){
     var detRezultat = r11*r22*r33 + r12*r23*r31 + r13*r21*r32 - r13*r22*r31 - r12*r21*r33 - r11*r23*r32;
 
     console.log(detRezultat);
-    cons.textContent = `Determinanta Matricii este ${detRezultat.toString()}.`;
+    cons.textContent = `Determinantul matricii este ${detRezultat.toString()}.`;
 
 });
