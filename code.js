@@ -1,4 +1,5 @@
 const det = document.querySelector(".determinant");
+const clear = document.querySelector(".clear");
 const cons = document.querySelector(".consola");
 
 det.addEventListener("click", function (){
@@ -14,7 +15,20 @@ det.addEventListener("click", function (){
 
     var detRezultat = r11*r22*r33 + r12*r23*r31 + r13*r21*r32 - r13*r22*r31 - r12*r21*r33 - r11*r23*r32;
 
-    console.log(detRezultat);
     cons.textContent = `Determinantul matricii este ${detRezultat.toString()}.`;
 
+});
+
+clear.addEventListener("click", function (){
+    document.querySelector(".r11").value = "";
+    document.querySelector(".r12").value = "";
+    document.querySelector(".r13").value = "";
+    document.querySelector(".r21").value = "";
+    document.querySelector(".r22").value = "";
+    document.querySelector(".r23").value = "";
+    document.querySelector(".r31").value = "";
+    document.querySelector(".r32").value = "";
+    document.querySelector(".r33").value = "";
+
+    cons.textContent = "";
 });
